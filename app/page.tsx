@@ -30,8 +30,11 @@ export default function Page() {
             paddingLeft: '20px',
           }}
         >
-          <ChartBarIcon className={`text-blue-slate mr-5 h-9 w-9`} />
-          <Link className={styles.footerLink} href="/about">
+          <Link
+            style={{ marginLeft: '10px' }}
+            className={styles.footerLink}
+            href="/about"
+          >
             ABOUT
           </Link>
 
