@@ -15,7 +15,8 @@ const config: Config = {
         blue: {
           400: '#2589FE',
           500: '#0070F3',
-          600: '#2F6FEB',
+          dark: '#183D4E',
+          slate: '#8f9ea4',
         },
         brown: {
           light: 'goldenrod',

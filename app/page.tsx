@@ -1,10 +1,10 @@
 import AcctaxLogo from '@/app/ui/acctax-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, ChartBarIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import { dosis } from '@/app/ui/fonts';
 import Image from 'next/image';
-import penangBridge from '../public/penangbridgesample.jpg';
+import penangBridge from '../public/penangbridgesamplecropped.jpg';
 
 export default function Page() {
   return (
@@ -22,7 +22,7 @@ export default function Page() {
           style={{
             position: 'absolute',
             bottom: '0px',
-            height: '70px',
+            height: '90px',
             width: '100%',
             display: 'flex',
             justifyContent: 'flex-start',
@@ -30,15 +30,16 @@ export default function Page() {
             paddingLeft: '20px',
           }}
         >
+          <ChartBarIcon className={`text-blue-slate mr-5 h-9 w-9`} />
           <Link className={styles.footerLink} href="/about">
-            ABOUT US
+            ABOUT
           </Link>
 
           <Link className={styles.footerLink} href="/services">
             SERVICES
           </Link>
           <Link className={styles.footerLink} href="/career">
-            CAREER
+            CONTACT US
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
@@ -54,17 +55,17 @@ export default function Page() {
         </div>
         <div className="m-10 flex flex-col justify-center gap-6 rounded-lg bg-gray-50/50 px-6 py-10 md:w-2/5 md:px-20">
           <p
-            className={`${dosis.className} text-xl text-gray-800 antialiased md:text-3xl md:leading-normal`}
+            className={`max-h-550 text-blue-dark text-xl antialiased md:text-3xl md:leading-normal`}
           >
             <AcctaxLogo />
-            <strong>Welcome to our homepage.</strong> This is the website for
-            the blablabla , brought to you by bla bla bla.
+            Welcome to our homepage. This is the website for the blablabla,
+            brought to you by bla bla bla.
           </p>
           <Link
             href="/login"
-            className="bg-brown-medium hover:bg-brown-dark flex items-center gap-5 self-start rounded-lg px-6 py-3 text-xl font-medium text-white transition-colors md:text-xl"
+            className="bg-blue-dark hover:text-blue-dark flex items-center gap-5 self-start rounded-lg px-6 py-3 text-2xl font-medium text-white transition-colors hover:bg-brown-light md:text-2xl"
           >
-            <span>Learn more</span> <ArrowRightIcon className="w-5 md:w-6" />
+            <span>LEARN MORE</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
       </div>
