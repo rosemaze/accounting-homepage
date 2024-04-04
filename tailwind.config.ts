@@ -17,6 +17,11 @@ const config: Config = {
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        brown: {
+          light: 'goldenrod',
+          medium: '#b46623',
+          dark: '#430E05',
+        },
       },
     },
     keyframes: {

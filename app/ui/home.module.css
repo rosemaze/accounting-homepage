@@ -1,0 +1,27 @@
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid red;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.footerLink {
+  color: #8f9ea4;
+  font-size: 32px;
+  padding: 0px 24px;
+}
+
+.footerLink:hover {
+  color: goldenrod;
+}
+
+.learnMoreLink {
+  padding: 3px 6px;
+  background-color: #b46623;
+  font-size: 24px;
+}
+
+.learnMoreLink:hover {
+  background-color: goldenrod;
+}
