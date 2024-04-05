@@ -1,4 +1,4 @@
-.shape {
+import penangBridge from .shape {
   height: 0;
   width: 0;
   border-bottom: 30px solid red;
@@ -6,22 +6,55 @@
   border-right: 20px solid transparent;
 }
 
+.footerContainer {
+  position: absolute;
+  bottom: 0px;
+  height: 90px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: 756px) {
+    display: flex;
+    padding-left: 20px;
+  }
+
+  @media (width< 756px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .footerLink {
-  color: #8f9ea4;
   font-size: 32px;
   padding: 0px 24px;
+
+  @media (min-width: 756px) {
+    font-size: 32px;
+    color: #8f9ea4;
+  }
+
+  @media (width< 756px) {
+    font-size: 24px;
+    color: goldenrod;
+  }
 }
 
 .footerLink:hover {
   color: goldenrod;
 }
 
-.learnMoreLink {
-  padding: 3px 6px;
-  background-color: #b46623;
-  font-size: 24px;
-}
+.heroMainContainer {
+  @media (min-width: 756px) {
+    justify-content: flex-end;
+    background-image: url('../../public/penangbridgesamplecropped.jpg');
+  }
 
-.learnMoreLink:hover {
-  background-color: goldenrod;
+  @media (width< 756px) {
+    background-image: url('../../public/penangbridgemobile.avif');
+  }
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
 }
